@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="30" name="Suite" parallel="tests">
 
-    <test name="Flipkart_Shoes_TestCase">
+    <test name="jenkins google test">
         <classes>
             <class name="JenkinsTesting" />
         </classes>
