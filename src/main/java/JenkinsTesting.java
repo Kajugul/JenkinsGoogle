@@ -1,12 +1,14 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
 public class JenkinsTesting
 {
-    public static void main(String[] a)
+    @Test
+    public  void main()
     {
         System.out.println("Initialing the browser for you....Please wait...");
         WebDriverManager.chromedriver().setup();
