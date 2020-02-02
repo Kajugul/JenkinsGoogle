@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class JenkinsTesting
 {
     @Test(description = "Google launch testing.")
-    public  void main()
+    public  void main() throws InterruptedException
     {
         System.out.println("Initialing the browser for you....Please wait...");
         WebDriverManager.chromedriver().setup();
@@ -20,7 +20,7 @@ public class JenkinsTesting
         driver.get("https://www.google.com/");
         System.out.println("google site launched.");
 
-       // Thread.sleep(3000);
+        Thread.sleep(8000);
         System.out.println("Closing the browser....");
         driver.quit();
     }
