@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class JenkinsTesting
 {
-    @Test
+    @Test(description = "Google launch testing.")
     public  void main()
     {
         System.out.println("Initialing the browser for you....Please wait...");
@@ -18,6 +18,7 @@ public class JenkinsTesting
         driver.manage().timeouts().pageLoadTimeout(40000, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("https://www.google.com/");
+        System.out.println("google site launched.");
 
        // Thread.sleep(3000);
         System.out.println("Closing the browser....");
