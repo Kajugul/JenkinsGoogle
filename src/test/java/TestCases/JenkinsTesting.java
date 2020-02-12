@@ -27,8 +27,12 @@ public class JenkinsTesting
         extent = ExtentTestManager.startTest(method.getName(), "verifytitle");
 
         extent.log(LogStatus.INFO, "initiating webdriver");
-        WebDriverManager.chromedriver().setup();
+        //WebDriverManager.chromedriver().setup();
+        System.out.println("Initialing the browser for you....Please wait...");
+        String chromeDriverPath = System.getProperty("user.dir") + "//Datafiles//chromedriver.exe";
+        System.setProperty("webdriver.chrome.driver", chromeDriverPath);
         driver = new ChromeDriver();
+       // driver = new ChromeDriver();
         extent.log(LogStatus.INFO, "webdriver initiated successfully.");
 
         extent.log(LogStatus.INFO, "maximizing the window");
