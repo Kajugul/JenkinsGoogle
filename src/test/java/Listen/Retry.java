@@ -13,7 +13,7 @@ public class Retry implements IRetryAnalyzer
 {
 
     private int count = 0;
-    private static int maxTry = 3; //Run the failed test 2 times
+    private static int maxTry =0; //Run the failed test 2 times
 
     @Override
     public boolean retry(ITestResult iTestResult)
