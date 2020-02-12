@@ -48,20 +48,10 @@ public class JenkinsTesting
 
         Thread.sleep(2000);
     }
+
     public WebDriver getWebDriver()
     {
         return driver;
-
-    }
-
-
-    @Test(priority = 2)
-    public void currenttitle(Method method)
-    {
-        extent = ExtentTestManager.startTest(method.getName(), "currenttitle");
-        extent.log(LogStatus.INFO, "it should failed.");
-        Assert.assertTrue(false);
-        extent.log(LogStatus.INFO,"it should not displayed.");
 
     }
 
