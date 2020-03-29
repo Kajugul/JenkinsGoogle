@@ -9,7 +9,7 @@
 
     <test name="jenkins google test">
         <classes>
-            <class name="TestCases.FacebookTesting" />
+            <class name="TestCases.BuildTest" />
         </classes>
     </test>
 
