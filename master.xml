@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Suite" parallel="tests">
+
+    <listeners>
+        <!--<listener class-name="Listen.TestListener"/>-->
+        <listener class-name="Listen.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="jenkins google test">
+        <classes>
+            <class name="TestCases.BuildTest" />
+            <class name="TestCases.FacebookTesting"/>
+            <class name="TestCases.JenkinsTesting"/>
+        </classes>
+    </test>
+
+</suite>
